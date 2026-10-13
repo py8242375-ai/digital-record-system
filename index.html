@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Health Record System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Digital Record System</h1>
+    <p>For Community Health Workers</p>
+  </header>
+
+  <nav>
+    <a href="#dashboard">Dashboard</a>
+    <a href="#register">Register Patient</a>
+    <a href="#records">Health Records</a>
+  </nav>
+
+  <main>
+    <section id="dashboard">
+      <h2>Welcome, Community Health Worker!</h2>
+      <p>Manage patient information digitally.</p>
+    </section>
+
+    <section id="register">
+      <h2>Patient Registration</h2>
+      <form id="patientForm">
+        <input id="name" placeholder="Patient Name" required>
+        <input id="age" type="number" min="0"
+               placeholder="Age" required>
+        <input id="village" placeholder="Village" required>
+        <button type="submit">Register Patient</button>
+      </form>
+    </section>
+
+    <section id="records">
+      <h2>Patient Records</h2>
+      <ul id="patientList"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
